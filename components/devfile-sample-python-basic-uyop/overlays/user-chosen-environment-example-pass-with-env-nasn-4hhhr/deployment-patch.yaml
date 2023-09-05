@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-uyop
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-fewi/devfile-sample-python-basic-uyop@sha256:d4daa8415cd9201ebbb5cf977603e56500d54be3c81927cf057f93edfc0768dc
+        name: my-python
+        resources: {}
+status: {}
